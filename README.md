@@ -5,8 +5,8 @@ Web tool that allows users to run Natural Language Processing (NLP) on articles 
 
 - [Installation](#installation)
 - [Interface](#interface)
-
-
+- [Run](#run)
+- [Test](#test)
 
 ## Installation
 1 - clone or fork the repo <br />
@@ -15,12 +15,23 @@ Web tool that allows users to run Natural Language Processing (NLP) on articles 
 mvn install
 ```
 ## Interface
-- Go to aylien site [MeaningCloud](https://learn.meaningcloud.com) and sign up for an API key. 
-
+- Go to [MeaningCloud](https://learn.meaningcloud.com) and sign up for an API key. 
 - Create a new  file named `.env` in the root of your project.
-
 - Fill the `.env` file with your API keys like this:
 
 ```
 key=**********************
 ```
+## Run
+### 1. Production Mode
+- `npm run build-prod` to generate the distribution folder.
+- Production mode can be accessed at `localhost:8081`
+
+### 2. Development Mode
+- `npm run build-dev` to start the webpack dev server.
+- Development mode can be accessed at `localhost:8080`
+
+**Note: To successfuly run and test development mode, express server should be running.**
+
+### 3. Testing
+- `npm run test` to run Jest.
