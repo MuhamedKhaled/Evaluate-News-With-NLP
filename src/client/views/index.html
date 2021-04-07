@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Natural Language checker</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"></div>
+      <h1>Natural Language checker</h1>
+    </header>
+
+    <main class="waiting">
+      <section class="form-wrapper">
+        <form class="" onsubmit="return Client.submitForm(event)">
+          <label for="url-field">Article that you want to check it</label>
+          <div id="fields-wrapper">
+            <input
+              type="url"
+              id="url-field"
+              name="url"
+              value=""
+              placeholder="https://example.com"
+              required
+            />
+            <input
+              type="submit"
+              name=""
+              value="GO"
+              onclick="return Client.submitForm(event)"
+              onsubmit="return Client.submitForm(event)"
+            />
+          </div>
+          <div id="url-status"></div>
+        </form>
+      </section>
+      <section class="status-wrapper">
+        <ol id="status"></ol>
+      </section>
+
+      <section class="results-wrapper">
+        <div class="polarity-wrapper">
+          <h4>Polarity</h4>
+          <div id="polarity"></div>
+          <div class="confidence">
+            Confidence: <span id="polar-confidence"></span>
+          </div>
+        </div>
+        <div class="subjectivity-wrapper">
+          <h4>Subjectivity</h4>
+          <div id="subjectivity"></div>
+          <div class="confidence">
+            Confidence: <span id="subj-confidence"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Muhamed khaled 2021</p>
+    </footer>
+
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>

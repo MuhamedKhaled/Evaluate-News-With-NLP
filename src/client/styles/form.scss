@@ -1,0 +1,60 @@
+$ok-color: #f5ffec;
+$error-color: #ff0d00;
+
+.form-wrapper {
+  background: linear-gradient(#1d93d8, #1d93d8 50%, #fff 50%, #fff 100%);
+  padding: 0 2em 2em 2em;
+}
+
+form {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+#fields-wrapper {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 1.4em;
+  box-shadow: 1px 1px 30px 0px rgba(102, 79, 79, 0.3);
+}
+
+input {
+  padding: 5px 20px;
+  width: 100%;
+  margin: 0;
+  height: 3em;
+  background: #fff;
+  border: 0;
+  font-size: 1.5em;
+}
+
+input[type="submit"] {
+  background: #115881;
+  color: #fff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  flex: 0 1 20%;
+}
+
+label {
+  font-size: 1.6em;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.6em;
+}
+
+.input-ok {
+  background-color: $ok-color;
+}
+
+.input-error {
+  color: $error-color;
+}
+
+#url-status {
+  margin: 1em;
+}
