@@ -16,6 +16,7 @@ mvn install
 ```
 ## Interface
 - Go to [MeaningCloud](https://learn.meaningcloud.com) and sign up for an API key. 
+- You can also check out the documentation of the MeaningCloud API [here](https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc)
 - Create a new  file named `.env` in the root of your project.
 - Fill the `.env` file with your API keys like this:
 
