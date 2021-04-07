@@ -6,7 +6,7 @@ Web tool that allows users to run Natural Language Processing (NLP) on articles 
 - [Installation](#installation)
 - [Interface](#interface)
 - [Run](#run)
-- [Test](#test)
+- [Testing](#testing)
 
 ## Installation
 1 - clone or fork the repo <br />
