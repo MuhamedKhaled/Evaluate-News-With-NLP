@@ -4,7 +4,7 @@ Web tool that allows users to run Natural Language Processing (NLP) on articles 
 ## Contents
 
 - [Installation](#installation)
-- [Setup NLP Interface](#Setup NLP Interface)
+- [Setup NLP Interface](#SetupNLPInterface)
 
 
 
