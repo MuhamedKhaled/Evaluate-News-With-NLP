@@ -33,5 +33,5 @@ key=**********************
 
 **Note: To successfuly run and test development mode, express server should be running.**
 
-### 3. Testing
+## 3. Testing
 - `npm run test` to run Jest.
