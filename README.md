@@ -4,7 +4,7 @@ Web tool that allows users to run Natural Language Processing (NLP) on articles 
 ## Contents
 
 - [Installation](#installation)
-- [Setup NLP Interface](#setupnlpinterface)
+- [Interface](#interface)
 
 
 
@@ -14,4 +14,13 @@ Web tool that allows users to run Natural Language Processing (NLP) on articles 
 ```
 mvn install
 ```
-## Setup NLP Interface
+## Interface
+- Go to aylien site [MeaningCloud](https://learn.meaningcloud.com) and sign up for an API key. 
+
+- Create a new  file named `.env` in the root of your project.
+
+- Fill the `.env` file with your API keys like this:
+
+```
+key=**********************
+```
