@@ -14,9 +14,9 @@ function checkUrl(inputUrl) {
     Client.updateStatus('stat_ok', 'Checking the url');
    
     //Pattern for a valid URL
-    const pattern =  /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
-    
-    if(pattern.test(inputUrl)) {
+//    const pattern =  /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+
+    if(checkUrl(inputUrl)) {
         urlStatus.innerText = 'The URL is correct';
         urlStatus.className = 'input-ok';
 
@@ -32,6 +32,16 @@ function checkUrl(inputUrl) {
     }
 
 }
+function urlCheck(inputUrl){
+ //Pattern for a valid URL
+ const pattern =  /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+    
+ if(pattern.test(inputUrl)) {
+     return true;
+ } else {
+     return false;
+ }
+}
 
-export { checkUrl }
+export { checkUrl ,urlCheck}
  
